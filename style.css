@@ -1,0 +1,115 @@
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+body{
+    background-color: blanchedalmond;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+h1{
+    color: blue;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2{
+    border-bottom: 2px solid #f97316;
+    padding-bottom: 5px;
+    font-size: 30px;
+
+}
+
+p{
+    color: #333333;
+    font-size: 16px;
+}
+
+section{
+    border: 1px solid lightsalmon;
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+.project-container{
+    display: flex;
+    gap: 20px;
+
+}
+
+.project{
+    box-shadow: 0 2px 5px gray;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+    flex: 1;
+    transition: 0.3s;
+}
+
+.project:hover{
+    background-color: aqua;
+    
+    transform: translateX(+5px);
+}
+
+
+#about{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+header{
+    background-color: rgb(11, 11, 11);
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a:hover{
+    color:orange;
+}
+
+button {
+    background-color: black;
+    padding: 10px 20px;
+    border: none;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: green;
+}
+
+footer{
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav{
+        margin-top: 10px;
+    }
+
+    .project-container{
+        flex-direction: column;
+    }
+    
+}
